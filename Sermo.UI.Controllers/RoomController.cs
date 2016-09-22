@@ -12,6 +12,7 @@ using System.Net;
 namespace Sermo.UI.Controllers
 {
     public class RoomController : Controller
+    //“I want to view a list of rooms that represent conversations.” - Izaiah
     {
         public RoomController(IRoomViewModelReader reader, IRoomViewModelWriter writer)
         {
