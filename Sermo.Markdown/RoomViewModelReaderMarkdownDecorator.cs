@@ -9,7 +9,7 @@ using Sermo.UI.Contracts;
 namespace Sermo.Markdown
 {
     using Markdown=MarkdownDeep.Markdown;
-
+    //I want to send markdown that will be correctly formatted. --Karli Niemann
     public class RoomViewModelReaderMarkdownDecorator : IRoomViewModelReader
     {
         public RoomViewModelReaderMarkdownDecorator(IRoomViewModelReader @delegate, Markdown markdown)

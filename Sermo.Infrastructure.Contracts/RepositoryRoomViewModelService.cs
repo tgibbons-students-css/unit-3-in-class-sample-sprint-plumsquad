@@ -11,6 +11,7 @@ using Sermo.UI.Contracts;
 
 namespace Sermo.UI.Controllers
 {
+    
     public class RepositoryRoomViewModelService : IRoomViewModelReader, IRoomViewModelWriter
     {
         public RepositoryRoomViewModelService(IRoomRepository roomRepository, IMessageRepository messageRepository, IViewModelMapper mapper)
