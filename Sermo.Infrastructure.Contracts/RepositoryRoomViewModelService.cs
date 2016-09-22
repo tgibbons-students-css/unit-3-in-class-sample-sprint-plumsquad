@@ -15,6 +15,7 @@ namespace Sermo.UI.Controllers
     {
         public RepositoryRoomViewModelService(IRoomRepository roomRepository, IMessageRepository messageRepository, IViewModelMapper mapper)
         {
+            //“I want to view the messages that have been sent to a room.” - Izaiah Bishop
             Contract.Requires<ArgumentNullException>(roomRepository != null);
             Contract.Requires<ArgumentNullException>(messageRepository != null);
             Contract.Requires<ArgumentNullException>(mapper != null);
