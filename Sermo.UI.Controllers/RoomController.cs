@@ -41,6 +41,7 @@ namespace Sermo.UI.Controllers
         [HttpPost]
         public ActionResult Create(RoomViewModel model)
         // Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Anja Kadijevic
+        //“I want to view a list of rooms that represent conversations.” - Izaiah
         {
             ActionResult result;
  
@@ -68,6 +69,7 @@ namespace Sermo.UI.Controllers
 
         [HttpPost]
         public ActionResult AddMessage(MessageViewModel messageViewModel)
+        //“I want to send plain text messages to other room members.” - Izaiah
         {
             ActionResult result;
 
