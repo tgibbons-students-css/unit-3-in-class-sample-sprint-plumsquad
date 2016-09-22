@@ -39,9 +39,7 @@ namespace Sermo.UnitTests
 
         [Test]
         public void GetCreateRendersView()
-        // Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Anja Kadijevic
-
-
+        //“I want to create rooms for categorizing conversations.” - Izaiah
         {
             var controller = CreateController();
 
@@ -65,7 +63,7 @@ namespace Sermo.UnitTests
         [TestCase("")]
         [TestCase("    ")]
         public void PostCreateNewRoomWithInvalidRoomNameCausesValidationError(string roomName)
-        // Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Tom Gibbons
+        //“I want to create rooms for categorizing conversations.” - Izaiah
         {
             var controller = CreateController();
 

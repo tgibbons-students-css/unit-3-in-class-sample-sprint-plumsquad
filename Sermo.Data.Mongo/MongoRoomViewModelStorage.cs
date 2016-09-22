@@ -32,6 +32,7 @@ namespace Sermo.Data.Mongo
         }
 
         public IEnumerable<MessageViewModel> GetRoomMessages(int roomID)
+        //“I want to serve hundreds of users concurrently.” - Izaiah
         {
             var messageQuery = Query<MessageViewModel>.EQ(viewModel => viewModel.RoomID, roomID);
             var messagesCollection = GetMessagesCollection();
@@ -45,6 +46,7 @@ namespace Sermo.Data.Mongo
         }
 
         private MongoCollection<MessageViewModel> GetMessagesCollection()
+        //“I want to serve hundreds of users concurrently.” - Izaiah
         {
             var database = GetDatabase();
             var messagesCollection = database.GetCollection<MessageViewModel>(MessagesCollection);

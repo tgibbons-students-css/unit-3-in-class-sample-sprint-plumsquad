@@ -9,6 +9,7 @@ namespace Sermo.Data.Contracts
     public interface IRoomRepository
     {
         void CreateRoom(string name);
+        //“I want to create rooms for categorizing conversations.” - Izaiah
 
         IEnumerable<RoomRecord> GetAllRooms();
     }
