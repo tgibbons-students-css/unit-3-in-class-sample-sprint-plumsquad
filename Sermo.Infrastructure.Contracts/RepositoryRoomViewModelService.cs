@@ -15,6 +15,7 @@ namespace Sermo.UI.Controllers
     {
         public RepositoryRoomViewModelService(IRoomRepository roomRepository, IMessageRepository messageRepository, IViewModelMapper mapper)
         {
+            //“I want to view the messages that have been sent to a room.” - Izaiah Bishop
             Contract.Requires<ArgumentNullException>(roomRepository != null);
             Contract.Requires<ArgumentNullException>(messageRepository != null);
             Contract.Requires<ArgumentNullException>(mapper != null);
@@ -26,6 +27,7 @@ namespace Sermo.UI.Controllers
 
         public IEnumerable<RoomViewModel> GetAllRooms()
         {
+            //“I want to view the messages that have been sent to a room.” - Izaiah Bishop
             var allRooms = new List<RoomViewModel>();
             var allRoomRecords = roomRepository.GetAllRooms();
             foreach(var roomRecord in allRoomRecords)
@@ -37,6 +39,7 @@ namespace Sermo.UI.Controllers
 
         public IEnumerable<MessageViewModel> GetRoomMessages(int roomID)
         {
+            //“I want to view the messages that have been sent to a room.” - Izaiah Bishop
             var roomMessages = new List<MessageViewModel>();
             var roomMessageRecords = messageRepository.GetMessagesForRoomID(roomID);
             foreach(var messageRecord in roomMessageRecords)
