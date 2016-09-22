@@ -34,10 +34,11 @@ namespace Sermo.UnitTests
             Assert.That(actualMessage, Is.Not.Null);
 
             Assert.That(actualMessage.Text, Is.EqualTo(expectedText));
-        }
+        }a
 
         [SetUp]
         public void SetUp()
+        // Changes 2 - “I want to send markdown that will be correctly formatted.” --Anja Kadijevic
         {
             markdown = new Markdown();
             message1 = new MessageViewModel
